@@ -39,8 +39,15 @@ public class Movie {
     public void playMovie () {
 
 
-
         System.out.println("O filme " + title + " está rodando.");
+
+
+    }
+
+    public void stopMovie () {
+
+
+        System.out.println("O filme " + title + " está pausado.");
 
 
     }
