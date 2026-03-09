@@ -35,8 +35,7 @@ public class Movie {
     private String plot;
 
 
-    // Métodos :
-
+    // Métodos que inicia o Movie :
     public void playMovie () {
 
 
@@ -45,6 +44,8 @@ public class Movie {
 
     }
 
+
+    // Metodo que pausa o Movie :
     public void stopMovie () {
 
 
