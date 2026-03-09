@@ -15,13 +15,16 @@ public class QueryException {
 
     // Atributos :
     private String path;
+    private String responseFinal;
 
 
+    // Métodos responsável por fazer a consulta dos movies na API :
     public void consutationTitle (String path) throws IOException, InterruptedException {
 
 
         // Atribuindo parametros com os atributos :
         this.path = path;
+
 
         // Configurando o agente que vai pegar a query e trazer um response :
         HttpClient client = HttpClient.newHttpClient();
@@ -30,10 +33,20 @@ public class QueryException {
         // Configurando a request :
         HttpRequest request = HttpRequest.newBuilder()
 
+
                 .uri(URI.create(path))
                 .build();
 
-        HttpResponse<String> response = client;
+
+        // Pegando os dados da request com o client e convertendo para Json :
+        HttpResponse<String> response = client
+
+
+                .send(request, HttpResponse.BodyHandlers.ofString());
+
+
+        // Armazenando os dados do response.body dentro do respose final :
+        responseFinal = response.body();
 
 
     }
