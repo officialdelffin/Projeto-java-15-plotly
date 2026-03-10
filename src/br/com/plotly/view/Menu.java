@@ -12,6 +12,7 @@ public class Menu {
     // Atributos :
     private String responseUser;
     private String nameMovie;
+    private String nameMovieFormated;
     private String path;
 
 
@@ -48,8 +49,12 @@ public class Menu {
         this.nameMovie = nameMovie;
 
 
+        // formatando o name tirando os espaços entre os names :
+        nameMovieFormated = this.nameMovie.replace(" ", "+");
+
+
         // Definindo o path
-        path = "https://www.omdbapi.com/?t=" + this.nameMovie + "&apikey=49ebfa25";
+        path = "https://www.omdbapi.com/?t=" + nameMovieFormated + "&apikey=49ebfa25";
 
 
     }
