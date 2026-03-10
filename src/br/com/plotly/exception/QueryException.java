@@ -3,11 +3,13 @@
 package br.com.plotly.exception;
 
 
+// Importações :
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+
 
 // Classe responsável pela querry dentro da API Omdb :
 public class QueryException {

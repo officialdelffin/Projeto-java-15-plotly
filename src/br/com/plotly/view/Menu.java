@@ -1,10 +1,13 @@
 
-
+// Pacote :
 package br.com.plotly.view;
 
 
 // Classe responsável pela comunicação direta com o usuário :
 public class Menu {
+
+
+    private String responseUser;
 
 
     // Realiza o fluxo de interação do usuário :
