@@ -13,9 +13,9 @@ public class Menu {
 
         System.out.printf("""
                 
-                Olá, seja bem-vindo ao Plotly!
+                Olá! Seja bem-vindo ao Plotly. O seu catálogo digital está pronto.
                 
-                Seu sistema de streaming, onde é possível assistir qualquer filme a qualquer momento.
+                Qual título você deseja explorar hoje?
                 
                 """);
 
