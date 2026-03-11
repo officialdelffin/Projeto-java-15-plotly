@@ -21,7 +21,7 @@ public class QueryException {
 
 
     // Métodos responsável por fazer a consulta dos movies na API :
-    public void consutationTitle (String path) throws IOException, InterruptedException {
+    public void consutationTitle (String pathP) throws IOException, InterruptedException {
 
 
         // Atribuindo parametros com os atributos :

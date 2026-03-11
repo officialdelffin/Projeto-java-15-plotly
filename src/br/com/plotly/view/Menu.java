@@ -3,6 +3,9 @@
 package br.com.plotly.view;
 
 
+import br.com.plotly.exception.QueryException;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 // Classe responsável pela comunicação direta com o usuário :
@@ -19,10 +22,11 @@ public class Menu {
 
     // Instancias :
     Scanner inputUser = new Scanner(System.in);
+    QueryException queryTitle = new QueryException();
 
 
     // Realiza o fluxo de interação do usuário :
-    public void interactionUser() {
+    public void interactionUser() throws IOException, InterruptedException {
 
 
 
@@ -47,6 +51,10 @@ public class Menu {
 
             // chamando o metodo e definino path :
             pathCreate(responseUser);
+
+
+            // Chaman o metodo que faz a request dos titles :
+            queryTitle.consutationTitle(path);
 
 
         }
