@@ -14,6 +14,7 @@ public class Menu {
     private String nameMovie;
     private String nameMovieFormated;
     private String path;
+    private int userChoice = 2;
 
 
     // Instancias :
@@ -24,18 +25,31 @@ public class Menu {
     public void interactionUser() {
 
 
-        // Apresentação e armazenando a escolhar do movie :
+
+        // Apresentação :
         System.out.printf("""
                 
                 Olá! Seja bem-vindo ao Plotly. O seu catálogo digital está pronto.
                 
-                Qual título você deseja explorar hoje?
-                
                 """);
 
 
-        // Armazenando a escolher do user :
-        responseUser = inputUser.nextLine();
+        while (userChoice == 2) {
+
+
+            // Pedindo o usuário para escolher o title :
+            System.out.println("Digite o titulo desejado : ");
+
+
+            // Armazenando a escolher do user :
+            responseUser = inputUser.nextLine();
+
+
+            // chamando o metodo e definino path :
+            pathCreate(responseUser);
+
+
+        }
 
 
     }
