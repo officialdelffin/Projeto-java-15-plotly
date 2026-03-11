@@ -9,7 +9,7 @@ public class Movie {
 
     // Construtores :
 
-    public Movie (String title , int year, int released, int runtime, String genre, String write, String plot) {
+    public Movie(String title, int year, int released, int runtime, String genre, String write, String plot) {
 
 
         // Vinculando parametros com os atributos :
@@ -36,7 +36,7 @@ public class Movie {
 
 
     // Métodos que inicia o Movie :
-    public void playMovie () {
+    public void playMovie() {
 
 
         System.out.println("O filme " + title + " está rodando.");
@@ -46,7 +46,7 @@ public class Movie {
 
 
     // Metodo que pausa o Movie :
-    public void stopMovie () {
+    public void stopMovie() {
 
 
         System.out.println("O filme " + title + " está pausado.");
@@ -63,7 +63,21 @@ public class Movie {
         // Criando uma formatação de texto :
         String textFormated = """
                 
+                Nome : %s
                 
+                Ano de Lançamento : %s
+                
+                Lançamento : %s
+                
+                Tempo de filme : %s
+                
+                Gênero : %s
+                
+                Diretor : %s
+                
+                Escritor : %s
+                
+                Trama : %s
                 
                 """;
 
