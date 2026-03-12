@@ -25,7 +25,7 @@ public class QueryException {
 
 
         // Atribuindo parametros com os atributos :
-        this.path = path;
+        this.path = pathP;
 
 
         // Configurando o agente que vai pegar a query e trazer um response :

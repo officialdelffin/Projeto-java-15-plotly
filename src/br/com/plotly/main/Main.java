@@ -4,7 +4,6 @@ package br.com.plotly.main;
 
 
 import br.com.plotly.view.Menu;
-
 import java.io.IOException;
 
 public class Main {
