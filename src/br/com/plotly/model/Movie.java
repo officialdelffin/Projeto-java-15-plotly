@@ -82,7 +82,7 @@ public class Movie {
                 """;
 
 
-        return super.toString();
+        return textFormated;
 
 
     }

@@ -51,6 +51,9 @@ public class QueryException {
         responseFinal = response.body();
 
 
+        System.out.println(responseFinal);
+
+
     }
 
 
