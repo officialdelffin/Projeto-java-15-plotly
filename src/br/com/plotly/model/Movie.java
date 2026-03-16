@@ -37,6 +37,16 @@ public class Movie {
     private String plot;
 
 
+    // Metodos getters :
+
+    public String getTitle() {
+
+
+        return title;
+
+
+    }
+
     // Métodos que inicia o Movie :
     public void playMovie() {
 

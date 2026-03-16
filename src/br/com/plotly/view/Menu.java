@@ -4,6 +4,8 @@ package br.com.plotly.view;
 
 // Importações :
 import br.com.plotly.exception.QueryException;
+import br.com.plotly.model.Movie;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -13,6 +15,7 @@ public class Menu {
 
     // Atributos :
     private String responseUser;
+    private String responseUserPlayOrSearch;
     private String nameMovie;
     private String nameMovieFormated;
     private String path;
@@ -49,12 +52,24 @@ public class Menu {
             responseUser = inputUser.nextLine();
 
 
-            // chamando o metodo e definino path :
+            // Chamando o metodo e definino path :
             pathCreate(responseUser);
 
 
             // Chaman o metodo que faz a request dos titles :
             queryTitle.consutationTitle(path);
+
+
+            // Pedindo para o usuário escolher entre dar play no movie ou pesquisar outro filme :
+            System.out.printf("""
+                    
+                    Digite alguma opções do filme : 
+                    
+                    
+                    1 - Assistir 
+                    
+                    """);
+
 
 
         }
