@@ -9,7 +9,7 @@ public class Movie {
 
     // Construtores :
 
-    public Movie(String title, int year, int released, int runtime, String genre, String write, String plot) {
+    public Movie(String title, String year, String released, String runtime, String genre, String director, String write, String plot) {
 
 
         // Vinculando parametros com os atributos :
@@ -18,6 +18,7 @@ public class Movie {
         this.released = released;
         this.runtime = runtime;
         this.genre = genre;
+        this.director = director;
         this.write = write;
         this.plot = plot;
 
@@ -27,10 +28,11 @@ public class Movie {
 
     // Atributos :
     private String title;
-    private int year;
-    private int released;
-    private int runtime;
+    private String year;
+    private String released;
+    private String runtime;
     private String genre;
+    private String director;
     private String write;
     private String plot;
 
@@ -82,7 +84,9 @@ public class Movie {
                 """;
 
 
-        return textFormated;
+        String textFormatedFinal = String.format(textFormated, title, year, released, runtime, genre, director, write, plot);
+
+        return textFormatedFinal;
 
 
     }
