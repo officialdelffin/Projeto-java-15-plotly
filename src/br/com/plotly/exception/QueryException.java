@@ -9,7 +9,6 @@ import br.com.plotly.model.TitleRecord;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -71,7 +70,13 @@ public class QueryException {
         Movie movie = new Movie(titleDefaute.title(), titleDefaute.year(), titleDefaute.released(), titleDefaute.runtime(), titleDefaute.genre(), titleDefaute.director(), titleDefaute.writer(), titleDefaute.plot());
 
 
+        // Exibindo o filme da tela do usuário :
+        System.out.println(movie);
+
+
     }
+
+
 
 
 
