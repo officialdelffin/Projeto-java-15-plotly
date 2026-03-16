@@ -4,6 +4,12 @@ package br.com.plotly.exception;
 
 
 // Importações :
+import br.com.plotly.model.Movie;
+import br.com.plotly.model.TitleRecord;
+import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -18,6 +24,7 @@ public class QueryException {
     // Atributos :
     private String path;
     private String responseFinal;
+
 
 
     // Métodos responsável por fazer a consulta dos movies na API :
@@ -49,8 +56,21 @@ public class QueryException {
         responseFinal = response.body();
 
 
-        // Imprimindo para ver se a buscar foi realizada com sucesso :
-        System.out.println(responseFinal);
+        // Intanciando o Gson e fazendo com que tudo que vier da API omdb fique em upper camel case :
+        Gson configueGson = new GsonBuilder()
+
+                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                .create();
+
+
+        // Criando um objeto de um title record e vinculando o que vem da API com os atributos do record :
+        TitleRecord movie = configueGson.fromJson(responseFinal, TitleRecord.class);
+
+
+
+
+
+
 
 
     }
