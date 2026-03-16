@@ -66,9 +66,9 @@ public class Menu {
                     Digite alguma opções do filme : 
                     
                     
-                    1 - Assistir 
+                    1 - Assistir %s
                     
-                    """);
+                    """ , queryTitle.);
 
 
 

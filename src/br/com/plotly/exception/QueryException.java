@@ -23,8 +23,20 @@ public class QueryException {
     // Atributos :
     private String path;
     private String responseFinal;
+    private String nameMovie;
 
 
+    // Metodo getters e setters : :
+
+
+    // Getters :
+    public String getNameMovie() {
+
+
+        return nameMovie;
+
+
+    }
 
     // Métodos responsável por fazer a consulta dos movies na API :
     public void consutationTitle (String pathP) throws IOException, InterruptedException {
@@ -72,6 +84,9 @@ public class QueryException {
 
         // Exibindo o filme da tela do usuário :
         System.out.println(movie);
+
+
+        nameMovie = movie.getTitle();
 
 
     }
