@@ -67,8 +67,9 @@ public class Menu {
                     
                     
                     1 - Assistir %s
+                    2 - Buscar outro filme
                     
-                    """ , queryTitle.);
+                    """ , queryTitle.getNameMovie());
 
 
 
