@@ -64,10 +64,11 @@ public class QueryException {
 
 
         // Criando um objeto de um title record e vinculando o que vem da API com os atributos do record :
-        TitleRecord movie = configueGson.fromJson(responseFinal, TitleRecord.class);
+        TitleRecord titleDefaute = configueGson.fromJson(responseFinal, TitleRecord.class);
 
 
-
+        // Criando um objeto de movie com base no title record e seus atributos :
+        Movie movie = new Movie(titleDefaute.title(), titleDefaute.year(), titleDefaute.released(), titleDefaute.runtime(), titleDefaute.genre(), titleDefaute.director(), titleDefaute.writer(), titleDefaute.plot() );
 
 
 
