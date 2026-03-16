@@ -28,7 +28,6 @@ public class QueryException {
 
     // Metodo getters e setters : :
 
-
     // Getters :
     public String getNameMovie() {
 
@@ -37,6 +36,7 @@ public class QueryException {
 
 
     }
+
 
     // Métodos responsável por fazer a consulta dos movies na API :
     public void consutationTitle (String pathP) throws IOException, InterruptedException {
@@ -86,6 +86,7 @@ public class QueryException {
         System.out.println(movie);
 
 
+        // Armazenando name do title para exibir quando necessário :
         nameMovie = movie.getTitle();
 
 

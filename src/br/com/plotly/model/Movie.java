@@ -93,6 +93,7 @@ public class Movie {
                 
                 """;
 
+
         // formatando o text do to String :
         String textFormatedFinal = String.format(textFormated, title, year, released, runtime, genre, director, write, plot);
 

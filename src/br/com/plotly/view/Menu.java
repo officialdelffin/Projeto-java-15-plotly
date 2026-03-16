@@ -2,12 +2,13 @@
 // Pacote :
 package br.com.plotly.view;
 
+
 // Importações :
 import br.com.plotly.exception.QueryException;
 import br.com.plotly.model.Movie;
-
 import java.io.IOException;
 import java.util.Scanner;
+
 
 // Classe responsável pela comunicação direta com o usuário :
 public class Menu {
@@ -71,6 +72,9 @@ public class Menu {
                     
                     """ , queryTitle.getNameMovie());
 
+
+            // Armazenando a escolha do usuário :
+            responseUserPlayOrSearch = inputUser.nextLine();
 
 
         }
