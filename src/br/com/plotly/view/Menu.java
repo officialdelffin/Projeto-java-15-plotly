@@ -147,7 +147,18 @@ public class Menu {
 
 
         // Se o usuário digitar qualquer outra coisa faça :
-        else {}
+        else {
+
+
+            // Recado de erro :
+            System.out.println("A escolha foi invalida selecione as opções 1 ou 2");
+
+
+            // Chamando novamente metodo de ação dentro do title :
+            actionTitle();
+
+
+        }
 
 
     }
