@@ -77,6 +77,9 @@ public class Menu {
             responseUserPlayOrSearch = inputUser.nextLine();
 
 
+
+
+
         }
 
 
@@ -97,6 +100,22 @@ public class Menu {
 
         // Definindo o path
         path = "https://www.omdbapi.com/?t=" + nameMovieFormated + "&apikey=49ebfa25";
+
+
+    }
+
+
+
+    public void playOrPause (int choiceP) {
+
+        int choice = choiceP;
+
+
+        if (choice == 1) {}
+
+        else if (choice == 2) {}
+
+        else {}
 
 
     }
