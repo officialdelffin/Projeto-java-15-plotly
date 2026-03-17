@@ -62,27 +62,6 @@ public class Menu {
             queryTitle.consutationTitle(path);
 
 
-            // Pedindo para o usuário escolher entre dar play no movie ou pesquisar outro filme :
-            System.out.printf("""
-                    
-                    Digite alguma opções do filme :
-                    
-                    
-                    1 - Assistir %s
-                    2 - Buscar outro filme
-                    
-                    """ , queryTitle.getNameMovie());
-
-
-            // Pulando linha e armazenando a escolha do usuário :
-            System.out.println(" ");
-            responseUserPlayOrSearch = inputUser.nextInt();
-
-
-            // Chamando o metodo que verifica o que o usuário quer fazer com o title
-            playOrPause(responseUserPlayOrSearch);
-
-
 
 
 
@@ -93,7 +72,7 @@ public class Menu {
 
 
     // Função responsável por criar o path :
-    public void pathCreate (String nameMovie) {
+    public void pathCreate (String nameMovie) throws IOException, InterruptedException {
 
 
         // Atribuindo paramentros na variavel :
@@ -108,12 +87,43 @@ public class Menu {
         path = "https://www.omdbapi.com/?t=" + nameMovieFormated + "&apikey=49ebfa25";
 
 
+        // Chamando o metodo de acão dentro do title :
+        actionTitle();
+
+
     }
 
 
+    // Metodo que executa ações quando o usuário selecionar o title :
+    public void actionTitle () throws IOException, InterruptedException {
+
+
+        // Pedindo para o usuário escolher entre dar play no movie ou pesquisar outro filme :
+        System.out.printf("""
+                    
+                    Digite alguma opções do filme :
+                    
+                    
+                    1 - Assistir %s
+                    2 - Buscar outro filme
+                    
+                    """ , queryTitle.getNameMovie());
+
+
+        // Pulando linha e armazenando a escolha do usuário :
+        System.out.println(" ");
+        responseUserPlayOrSearch = inputUser.nextInt();
+
+
+        // Chamando o metodo que verifica o que o usuário quer fazer com o title
+        playOrPause(responseUserPlayOrSearch);
+
+
+    }
+
 
     // Metodo responsavel por verificar se o usuário quer dar play em um title ou se quer dar pause em um title :
-    public void playOrPause (int choiceP) {
+    public void playOrPause (int choiceP) throws IOException, InterruptedException {
 
 
         // Atribuindo o paramentro na variavel :
@@ -130,7 +140,13 @@ public class Menu {
         }
 
         // Se a escolha do usuário for 2 faça :
-        else if (choice == 2) {}
+        else if (choice == 2) {
+
+
+            interactionUser();
+
+
+        }
 
 
         // Se o usuário digitar qualquer outra coisa faça :
