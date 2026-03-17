@@ -24,6 +24,7 @@ public class QueryException {
     private String path;
     private String responseFinal;
     private String nameMovie;
+    private Movie movie;
 
 
     // Metodo getters e setters : :
@@ -79,7 +80,15 @@ public class QueryException {
 
 
         // Criando um objeto de movie com base no title record e seus atributos :
-        Movie movie = new Movie(titleDefaute.title(), titleDefaute.year(), titleDefaute.released(), titleDefaute.runtime(), titleDefaute.genre(), titleDefaute.director(), titleDefaute.writer(), titleDefaute.plot());
+        movie = new Movie(
+
+                titleDefaute.title(),
+                titleDefaute.year(), titleDefaute.released(),
+                titleDefaute.runtime(), titleDefaute.genre(), titleDefaute.director(),
+                titleDefaute.writer(),
+                titleDefaute.plot()
+
+        );
 
 
         // Exibindo o filme da tela do usuário :
