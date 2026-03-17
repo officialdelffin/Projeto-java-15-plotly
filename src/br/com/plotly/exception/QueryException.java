@@ -90,6 +90,8 @@ public class QueryException {
         nameMovie = movie.getTitle();
 
 
+
+
     }
 
 

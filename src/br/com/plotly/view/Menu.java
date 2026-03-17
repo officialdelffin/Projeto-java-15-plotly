@@ -28,6 +28,7 @@ public class Menu {
     QueryException queryTitle = new QueryException();
 
 
+
     // Realiza o fluxo de interação do usuário :
     public void interactionUser() throws IOException, InterruptedException {
 
@@ -111,7 +112,11 @@ public class Menu {
         int choice = choiceP;
 
 
-        if (choice == 1) {}
+        if (choice == 1) {
+
+
+
+        }
 
         else if (choice == 2) {}
 
