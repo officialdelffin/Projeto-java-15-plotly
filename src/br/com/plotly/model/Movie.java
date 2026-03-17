@@ -58,7 +58,7 @@ public class Movie {
 
 
     // Metodo que pausa o Movie :
-    public void stopMovie() {
+    public void pauseMovie() {
 
 
         System.out.println("O filme " + title + " está pausado.");

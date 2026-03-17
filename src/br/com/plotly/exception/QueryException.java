@@ -104,4 +104,24 @@ public class QueryException {
     }
 
 
+    // Delegando o metodo playMovie :
+    public void playTitle () {
+
+
+        movie.playMovie();
+
+
+    }
+
+
+    // Delegando o metodo pauseMovie
+    public void pauseTile () {
+
+
+        movie.pauseMovie();
+
+
+    }
+
+
 }
