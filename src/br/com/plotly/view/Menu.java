@@ -107,19 +107,26 @@ public class Menu {
 
 
 
+    // Metodo responsavel por verificar se o usuário quer dar play em um title ou se quer dar pause em um title :
     public void playOrPause (int choiceP) {
 
+
+        // Atribuindo o paramentro na variavel :
         int choice = choiceP;
 
 
+        // Se a escolha o usuário for 1 faça :
         if (choice == 1) {
 
 
 
         }
 
+        // Se a escolha do usuário for 2 faça :
         else if (choice == 2) {}
 
+
+        // Se o usuário digitar qualquer outra coisa faça :
         else {}
 
 
