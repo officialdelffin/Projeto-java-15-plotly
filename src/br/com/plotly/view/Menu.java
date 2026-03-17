@@ -119,6 +119,8 @@ public class Menu {
         if (choice == 1) {
 
 
+            queryTitle.playTitle();
+
 
         }
 
