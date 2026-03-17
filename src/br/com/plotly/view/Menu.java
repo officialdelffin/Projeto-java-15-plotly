@@ -16,7 +16,7 @@ public class Menu {
 
     // Atributos :
     private String responseUser;
-    private String responseUserPlayOrSearch;
+    private int responseUserPlayOrSearch;
     private String nameMovie;
     private String nameMovieFormated;
     private String path;
@@ -47,7 +47,7 @@ public class Menu {
 
 
             // Pedindo o usuário para escolher o title :
-            System.out.println("Digite o titulo desejado : ");
+            System.out.println("Digite o titulo desejado : " + "\n");
 
 
             // Armazenando a escolher do user :
@@ -65,7 +65,7 @@ public class Menu {
             // Pedindo para o usuário escolher entre dar play no movie ou pesquisar outro filme :
             System.out.printf("""
                     
-                    Digite alguma opções do filme : 
+                    Digite alguma opções do filme :
                     
                     
                     1 - Assistir %s
@@ -74,8 +74,13 @@ public class Menu {
                     """ , queryTitle.getNameMovie());
 
 
-            // Armazenando a escolha do usuário :
-            responseUserPlayOrSearch = inputUser.nextLine();
+            // Pulando linha e armazenando a escolha do usuário :
+            System.out.println(" ");
+            responseUserPlayOrSearch = inputUser.nextInt();
+
+
+            // Chamando o metodo que verifica o que o usuário quer fazer com o title
+            playOrPause(responseUserPlayOrSearch);
 
 
 
