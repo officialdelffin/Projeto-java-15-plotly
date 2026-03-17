@@ -62,7 +62,8 @@ public class Menu {
             queryTitle.consutationTitle(path);
 
 
-
+            // Chamando o metodo de acão dentro do title :
+            actionTitle();
 
 
         }
@@ -85,10 +86,6 @@ public class Menu {
 
         // Definindo o path
         path = "https://www.omdbapi.com/?t=" + nameMovieFormated + "&apikey=49ebfa25";
-
-
-        // Chamando o metodo de acão dentro do title :
-        actionTitle();
 
 
     }
