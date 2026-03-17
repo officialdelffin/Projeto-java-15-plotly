@@ -39,6 +39,8 @@ public class Menu {
                 
                 Olá! Seja bem-vindo ao Plotly. O seu catálogo digital está pronto.
                 
+                Clique a tecla enter para iniciar :
+                
                 """);
 
 
@@ -46,7 +48,8 @@ public class Menu {
         while (userChoice == 2) {
 
 
-            // Pedindo o usuário para escolher o title :
+            // Limpando o scanner e pedindo o usuário para escolher o title :
+            inputUser.nextLine();
             System.out.println("Digite o titulo desejado : " + "\n");
 
 
@@ -107,9 +110,15 @@ public class Menu {
                     """ , queryTitle.getNameMovie());
 
 
-        // Pulando linha e armazenando a escolha do usuário :
+        // Formatando menu :
         System.out.println(" ");
+
+        // Armazenando a escolha do usuário :
         responseUserPlayOrSearch = inputUser.nextInt();
+
+
+        // Formatando menu :
+        System.out.println(" ");
 
 
         // Chamando o metodo que verifica o que o usuário quer fazer com o title
