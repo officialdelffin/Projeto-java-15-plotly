@@ -51,7 +51,7 @@ public class Movie {
     public void playMovie() {
 
 
-        System.out.println("O filme " + title + " está rodando.");
+        System.out.println("O filme " + title + " está rodando." + "\n");
 
 
     }
@@ -61,7 +61,7 @@ public class Movie {
     public void pauseMovie() {
 
 
-        System.out.println("O filme " + title + " está pausado.");
+        System.out.println("O filme " + title + " está pausado." + "\n");
 
 
     }
