@@ -113,6 +113,7 @@ public class Menu {
         // Formatando menu :
         System.out.println(" ");
 
+
         // Armazenando a escolha do usuário :
         responseUserPlayOrSearch = inputUser.nextInt();
 
