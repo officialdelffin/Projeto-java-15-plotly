@@ -33,17 +33,6 @@ public class Menu {
     public void interactionUser() throws IOException, InterruptedException {
 
 
-
-        // Apresentação :
-        System.out.printf("""
-                
-                Olá! Seja bem-vindo ao Plotly. O seu catálogo digital está pronto.
-                
-                Clique a tecla enter para iniciar :
-                
-                """);
-
-
         // Enquanto a escolha do usuário for 2 a query do queryTitle vai rodar :
         while (userChoice == 2) {
 
