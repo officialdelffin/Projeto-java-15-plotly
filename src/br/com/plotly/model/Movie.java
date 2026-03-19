@@ -56,7 +56,7 @@ public class Movie {
 
 
         // Fazendo a conversão do runtimeClean :
-        Integer.parseInt(runtimeClean);
+        int runtimeConverted = Integer.parseInt(runtimeClean);
 
 
 
