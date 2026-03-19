@@ -1,5 +1,5 @@
 
-
+// Pacotes :
 package br.com.plotly.service;
 
 
@@ -16,6 +16,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 
+// Classe responsável pela request na API Omdb :
 public class QueryOmdb  {
 
 

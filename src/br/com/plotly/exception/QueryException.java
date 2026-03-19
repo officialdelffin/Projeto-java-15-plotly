@@ -3,7 +3,7 @@
 package br.com.plotly.exception;
 
 
-// Classe responsável pela querry dentro da API Omdb :
+// Classe responsável por tratamento de excessões :
 public class QueryException {
 
 

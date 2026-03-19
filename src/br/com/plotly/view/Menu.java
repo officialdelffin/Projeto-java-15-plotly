@@ -7,7 +7,6 @@ package br.com.plotly.view;
 import br.com.plotly.exception.QueryException;
 import br.com.plotly.model.Movie;
 import br.com.plotly.service.QueryOmdb;
-
 import java.io.IOException;
 import java.util.Scanner;
 
