@@ -64,7 +64,7 @@ public class Title {
 
 
 
-        System.out.println("O filme " + title + " está rodando." + "\n");
+        System.out.println("O título " + title + " está rodando." + "\n");
 
 
     }
@@ -74,7 +74,7 @@ public class Title {
     public void pauseTitle() {
 
 
-        System.out.println("O filme " + title + " está pausado." + "\n");
+        System.out.println("O título " + title + " está pausado." + "\n");
 
 
     }

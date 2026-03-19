@@ -85,14 +85,14 @@ public class Menu {
     public void actionTitle () throws IOException, InterruptedException {
 
 
-        // Pedindo para o usuário escolher entre dar play no title ou pesquisar outro filme :
+        // Pedindo para o usuário escolher entre dar play no title ou pesquisar outro título :
         System.out.printf("""
                     
-                    Digite alguma opções do filme :
+                    Digite alguma opções do título :
                     
                     
                     1 - Assistir %s
-                    2 - Buscar outro filme
+                    2 - Buscar outro título
                     
                     """ , queryTitle.getNameTitle());
 

@@ -93,7 +93,7 @@ public class QueryOmdb  {
         );
 
 
-        // Exibindo o filme da tela do usuário :
+        // Exibindo o título da tela do usuário :
         System.out.println(title);
 
 
