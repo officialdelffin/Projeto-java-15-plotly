@@ -108,7 +108,7 @@ public class QueryOmdb  {
     public void playTitle () {
 
 
-        title.playMovie();
+        title.playTitle();
 
 
     }
@@ -118,7 +118,7 @@ public class QueryOmdb  {
     public void pauseTile () {
 
 
-        title.pauseMovie();
+        title.pauseTitle();
 
 
     }

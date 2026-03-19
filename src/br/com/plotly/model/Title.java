@@ -3,7 +3,7 @@
 package br.com.plotly.model;
 
 
-// Classe responsável pela criação do objeto Movie :
+// Classe responsável pela criação do objeto Title :
 public class Title {
 
 
@@ -48,8 +48,8 @@ public class Title {
 
     }
 
-    // Métodos que inicia o Movie :
-    public void playMovie() {
+    // Métodos que inicia o Title :
+    public void playTitle() {
 
 
         // Criando o atributo de runtime e limpando a string :
@@ -70,8 +70,8 @@ public class Title {
     }
 
 
-    // Metodo que pausa o Movie :
-    public void pauseMovie() {
+    // Metodo que pausa o Title :
+    public void pauseTitle() {
 
 
         System.out.println("O filme " + title + " está pausado." + "\n");
@@ -80,7 +80,7 @@ public class Title {
     }
 
 
-    // Sobreescrevendo o metodo toString dos Movies :
+    // Sobreescrevendo o metodo toString dos Title :
     @Override
     public String toString() {
 
@@ -94,7 +94,7 @@ public class Title {
                 
                 Lançamento : %s
                 
-                Tempo de filme : %s
+                Tempo de titulo : %s
                 
                 Gênero : %s
                 
@@ -111,7 +111,7 @@ public class Title {
         String textFormatedFinal = String.format(textFormated, title, year, released, runtime, genre, director, write, plot);
 
 
-        // Retornando o formato do texto de exibição do movie :
+        // Retornando o formato do texto de exibição do Title :
         return textFormatedFinal;
 
 
