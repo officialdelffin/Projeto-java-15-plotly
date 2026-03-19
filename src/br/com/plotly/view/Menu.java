@@ -16,8 +16,8 @@ public class Menu {
     // Atributos :
     private String responseUser;
     private int responseUserPlayOrSearch;
-    private String nameMovie;
-    private String nameMovieFormated;
+    private String nameTitle;
+    private String nameTitleFormated;
     private String path;
     private int userChoice = 2;
 
@@ -63,19 +63,19 @@ public class Menu {
 
 
     // Função responsável por criar o path :
-    public void pathCreate (String nameMovie) throws IOException, InterruptedException {
+    public void pathCreate (String nameTitleP) throws IOException, InterruptedException {
 
 
         // Atribuindo paramentros na variavel :
-        this.nameMovie = nameMovie;
+        this.nameTitle = nameTitleP;
 
 
         // formatando o name tirando os espaços entre os names :
-        nameMovieFormated = this.nameMovie.replace(" ", "+");
+        nameTitleFormated = this.nameTitle.replace(" ", "+");
 
 
         // Definindo o path
-        path = "https://www.omdbapi.com/?t=" + nameMovieFormated + "&apikey=49ebfa25";
+        path = "https://www.omdbapi.com/?t=" + nameTitleFormated + "&apikey=49ebfa25";
 
 
     }
@@ -85,7 +85,7 @@ public class Menu {
     public void actionTitle () throws IOException, InterruptedException {
 
 
-        // Pedindo para o usuário escolher entre dar play no movie ou pesquisar outro filme :
+        // Pedindo para o usuário escolher entre dar play no title ou pesquisar outro filme :
         System.out.printf("""
                     
                     Digite alguma opções do filme :

@@ -39,7 +39,7 @@ public class QueryOmdb  {
     }
 
 
-    // Métodos responsável por fazer a consulta dos movies na API :
+    // Métodos responsável por fazer a consulta dos titles na API :
     public void consutationTitle (String pathP) throws IOException, InterruptedException {
 
 
@@ -79,7 +79,7 @@ public class QueryOmdb  {
         TitleRecord titleDefaute = configueGson.fromJson(responseFinal, TitleRecord.class);
 
 
-        // Criando um objeto de movie com base no title record e seus atributos :
+        // Criando um objeto de Title com base no title record e seus atributos :
         title = new Title(
 
 
@@ -104,7 +104,7 @@ public class QueryOmdb  {
     }
 
 
-    // Delegando o metodo playMovie :
+    // Delegando o metodo playTitle :
     public void playTitle () {
 
 
@@ -114,7 +114,7 @@ public class QueryOmdb  {
     }
 
 
-    // Delegando o metodo pauseMovie
+    // Delegando o metodo pauseTitle
     public void pauseTile () {
 
 
