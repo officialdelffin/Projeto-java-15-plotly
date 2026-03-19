@@ -6,6 +6,8 @@ package br.com.plotly.view;
 // Importações :
 import br.com.plotly.exception.QueryException;
 import br.com.plotly.model.Movie;
+import br.com.plotly.service.QueryOmdb;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -25,7 +27,7 @@ public class Menu {
 
     // Instancias :
     Scanner inputUser = new Scanner(System.in);
-    QueryException queryTitle = new QueryException();
+    QueryOmdb queryTitle = new QueryOmdb();
 
 
 

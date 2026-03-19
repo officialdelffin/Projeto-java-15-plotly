@@ -59,6 +59,9 @@ public class Movie {
         int runtimeConverted = Integer.parseInt(runtimeClean);
 
 
+        // Chamando a função que executa o cronometro de
+
+
 
         System.out.println("O filme " + title + " está rodando." + "\n");
 
