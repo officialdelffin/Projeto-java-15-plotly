@@ -4,7 +4,7 @@ package br.com.plotly.service;
 
 
 // Importações :
-import br.com.plotly.model.Movie;
+import br.com.plotly.model.Title;
 import br.com.plotly.model.TitleRecord;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
@@ -23,17 +23,17 @@ public class QueryOmdb  {
     // Atributos :
     private String path;
     private String responseFinal;
-    private String nameMovie;
-    private Movie movie;
+    private String nameTitle;
+    private Title title;
 
 
     // Metodo getters e setters : :
 
     // Getters :
-    public String getNameMovie() {
+    public String getNameTitle() {
 
 
-        return nameMovie;
+        return nameTitle;
 
 
     }
@@ -80,7 +80,7 @@ public class QueryOmdb  {
 
 
         // Criando um objeto de movie com base no title record e seus atributos :
-        movie = new Movie(
+        title = new Title(
 
 
                 titleDefaute.title(),
@@ -94,11 +94,11 @@ public class QueryOmdb  {
 
 
         // Exibindo o filme da tela do usuário :
-        System.out.println(movie);
+        System.out.println(title);
 
 
         // Armazenando name do title para exibir quando necessário :
-        nameMovie = movie.getTitle();
+        nameTitle = title.getTitle();
 
 
     }
@@ -108,7 +108,7 @@ public class QueryOmdb  {
     public void playTitle () {
 
 
-        movie.playMovie();
+        title.playMovie();
 
 
     }
@@ -118,7 +118,7 @@ public class QueryOmdb  {
     public void pauseTile () {
 
 
-        movie.pauseMovie();
+        title.pauseMovie();
 
 
     }

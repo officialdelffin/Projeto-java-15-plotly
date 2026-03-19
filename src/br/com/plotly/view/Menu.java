@@ -94,7 +94,7 @@ public class Menu {
                     1 - Assistir %s
                     2 - Buscar outro filme
                     
-                    """ , queryTitle.getNameMovie());
+                    """ , queryTitle.getNameTitle());
 
 
         // Formatando menu :
