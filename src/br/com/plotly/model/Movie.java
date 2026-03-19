@@ -51,6 +51,15 @@ public class Movie {
     public void playMovie() {
 
 
+        // Criando o atributo de runtime e limpando a string :
+        String runtimeClean = runtime.replace(" min" , "");
+
+
+        // Fazendo a conversão do runtimeClean :
+        Integer.parseInt(runtimeClean);
+
+
+
         System.out.println("O filme " + title + " está rodando." + "\n");
 
 
