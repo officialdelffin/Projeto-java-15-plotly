@@ -60,10 +60,11 @@ public class Title {
         int runtimeConverted = Integer.parseInt(runtimeClean);
 
 
-        // Chamando a função que executa o cronometro de
-
-
+        // Avsio que o titulo está rodando :
         System.out.println("O título " + title + " está rodando." + "\n");
+
+
+
 
 
     }
@@ -131,6 +132,7 @@ public class Title {
 
             // Faz com que o loop demore um segundo para contabilizar e incrementar mais 1 no i :
             Thread.sleep(1000);
+
 
             // Exibe o progresso na mesma linha (usando \r para sobrescrever)
             System.out.print("\rProgresso: " + i + " / " + time + " min assistidos.");
