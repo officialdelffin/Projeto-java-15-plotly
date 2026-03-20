@@ -49,7 +49,7 @@ public class Title {
     }
 
     // Métodos que inicia o Title :
-    public void playTitle() {
+    public void playTitle() throws InterruptedException {
 
 
         // Criando o atributo de runtime e limpando a string :
@@ -64,7 +64,8 @@ public class Title {
         System.out.println("O título " + title + " está rodando." + "\n");
 
 
-
+        // Chamando o método que contabilizar o cronograma do title :
+        timelineTitle(runtimeConverted);
 
 
     }
