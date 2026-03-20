@@ -105,7 +105,7 @@ public class QueryOmdb  {
 
 
     // Delegando o metodo playTitle :
-    public void playTitle () {
+    public void playTitle () throws InterruptedException {
 
 
         title.playTitle();
