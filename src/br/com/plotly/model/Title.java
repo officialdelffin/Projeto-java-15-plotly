@@ -127,6 +127,10 @@ public class Title {
         int time = timeP;
 
 
+        // Fazendo o calculo da conversão em minutos para segundos :
+        time = 60 * time;
+
+
         // Criando um for i para fazer o sistema de cronograma :
         for (int i = 0; i <= time; i++) {
 
