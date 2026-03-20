@@ -40,10 +40,21 @@ public class Title {
 
     // Metodos getters :
 
+
+    // Getters :
     public String getTitle() {
 
 
         return title;
+
+
+    }
+
+
+    public String getRuntime() {
+
+
+        return runtime;
 
 
     }
@@ -140,7 +151,7 @@ public class Title {
 
 
             // Exibe o progresso na mesma linha (usando \r para sobrescrever)
-            System.out.print("\rProgresso: " + i + " / " + time + " min assistidos.");
+            System.out.print("\rProgresso: " + i + " / " + getRuntime() + " min assistidos.");
 
 
         }
