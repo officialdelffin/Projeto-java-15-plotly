@@ -53,7 +53,7 @@ public class Title {
 
 
         // Criando o atributo de runtime e limpando a string :
-        String runtimeClean = runtime.replace(" min" , "");
+        String runtimeClean = runtime.replace(" min", "");
 
 
         // Fazendo a conversão do runtimeClean :
@@ -61,7 +61,6 @@ public class Title {
 
 
         // Chamando a função que executa o cronometro de
-
 
 
         System.out.println("O título " + title + " está rodando." + "\n");
@@ -118,7 +117,29 @@ public class Title {
     }
 
 
-    // Metodo que contabiliza o crongrama
+    // Metodo que contabiliza o crongrama dos titles :
+    public void timelineTitle(int timeP) throws InterruptedException {
+
+
+        // Atribuindo parametros nos atributos :
+        int time = timeP;
+
+
+        // Criando um for i para fazer o sistema de cronograma :
+        for (int i = 0; i <= time; i++) {
+
+
+            // Faz com que o loop demore um segundo para contabilizar e incrementar mais 1 no i :
+            Thread.sleep(1000);
+
+            // Exibe o progresso na mesma linha (usando \r para sobrescrever)
+            System.out.print("\rProgresso: " + i + " / " + time + " min assistidos.");
+
+
+        }
+
+
+    }
 
 
 }
