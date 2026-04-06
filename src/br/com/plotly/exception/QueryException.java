@@ -16,6 +16,7 @@ public class QueryException {
 
     // Métodos :
 
+    // Faz o tratamento caso o Runtime esteja em um formato invalido :
     public void handleInvalidRuntime (String runtime) {
 
 
@@ -25,6 +26,7 @@ public class QueryException {
     }
 
 
+    // Faz o tratamento caso a busca não seja realizada por conta de alguma falha na rede :
     public void handleConnectionError (Exception e) {
 
 
@@ -34,6 +36,7 @@ public class QueryException {
     }
 
 
+    // Faz o tratamento caso o filme não foi encontrado no catalogo :
     public void handleMovieNotFound (String title) {
 
 
