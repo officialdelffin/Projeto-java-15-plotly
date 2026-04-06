@@ -7,9 +7,16 @@ package br.com.plotly.exception;
 public class QueryException {
 
 
+    // Atributos :
+    private String runtime;
+    private String title;
+    private Exception e;
+
+
+
     // Métodos :
 
-    public void handleInvalidRuntime () {
+    public void handleInvalidRuntime (String runtime) {
 
 
 
@@ -18,7 +25,7 @@ public class QueryException {
     }
 
 
-    public void handleConnectionError () {
+    public void handleConnectionError (Exception e) {
 
 
 
@@ -27,7 +34,7 @@ public class QueryException {
     }
 
 
-    public void handleMovieNotFound () {
+    public void handleMovieNotFound (String title) {
 
 
 
