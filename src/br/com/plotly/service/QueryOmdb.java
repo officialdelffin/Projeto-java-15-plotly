@@ -87,17 +87,20 @@ public class QueryOmdb  {
             }
 
 
+            // Intanciando o Gson e fazendo com que tudo que vier da API omdb fique em upper camel case :
+            Gson configueGson = new GsonBuilder()
+
+                    .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                    .create();
+
+
         }
 
 
 
 
 
-        // Intanciando o Gson e fazendo com que tudo que vier da API omdb fique em upper camel case :
-        Gson configueGson = new GsonBuilder()
 
-                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                .create();
 
 
         // Criando um objeto de um title record e vinculando o que vem da API com os atributos do record :
