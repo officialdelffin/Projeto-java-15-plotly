@@ -10,7 +10,7 @@ public class QueryException {
     // Atributos :
     private String runtime;
     private String title;
-    private Exception e;
+    private Exception errorConection;
 
 
     // Métodos :
@@ -18,13 +18,14 @@ public class QueryException {
     // Faz o tratamento caso o Runtime esteja em um formato invalido :
     public void handleInvalidRuntime(String runtime) {
 
+
         // Recebendo paremetros
         this.runtime = runtime;
 
 
         System.out.printf("""
                 
-                (Erro de conversão)
+                [Erro de conversão]
                 
                 O tempo %s não pode ser convertido
                 
@@ -37,7 +38,22 @@ public class QueryException {
 
 
     // Faz o tratamento caso a busca não seja realizada por conta de alguma falha na rede :
-    public void handleConnectionError(Exception e) {
+    public void handleConnectionError(Exception errorConection) {
+
+
+        // Recebendo parametros :
+        this.errorConection = errorConection;
+
+
+        System.out.printf("""
+                
+                [Erro de Conexão]
+                
+                Não foi possível fazer a consulta do título!.
+                
+                Detalhe técnico : %s
+                
+                """, errorConection.getMessage());
 
 
     }
