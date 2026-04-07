@@ -63,6 +63,21 @@ public class QueryException {
     public void handleMovieNotFound(String title) {
 
 
+        // Recebendo parametros :
+        this.title = title;
+
+
+        System.out.printf("""
+                
+                [Filme não encontrado]
+                
+                O título %s não existe nesse catálogo.
+                
+                Verifique se o nome do filme está escrito corretamente em inglês.
+                
+                """);
+
+
     }
 
 
