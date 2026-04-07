@@ -77,6 +77,16 @@ public class QueryOmdb  {
             responseFinal = response.body();
 
 
+            // Se a busca do titulo na API e não ter esse titule ele avisa o erro :
+            if (responseFinal.contains("false")) {
+
+
+                handle.handleMovieNotFound(nameTitle);
+
+
+            }
+
+
         }
 
 
