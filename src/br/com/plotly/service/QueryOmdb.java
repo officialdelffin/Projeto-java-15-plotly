@@ -52,25 +52,35 @@ public class QueryOmdb  {
         QueryException handle = new QueryException();
 
 
-        // Configurando o agente que vai pegar a query e trazer um response :
-        HttpClient client = HttpClient.newHttpClient();
+        // Fazendo que o código tente rodar o sistema de busca da API :
+        try {
 
 
-        // Configurando a request :
-        HttpRequest request = HttpRequest.newBuilder()
-
-                .uri(URI.create(path))
-                .build();
+            // Configurando o agente que vai pegar a query e trazer um response :
+            HttpClient client = HttpClient.newHttpClient();
 
 
-        // Pegando os dados da request com o client e convertendo para Json :
-        HttpResponse<String> response = client
+            // Configurando a request :
+            HttpRequest request = HttpRequest.newBuilder()
 
-                .send(request, HttpResponse.BodyHandlers.ofString());
+                    .uri(URI.create(path))
+                    .build();
 
 
-        // Armazenando os dados do response.body dentro do respose final :
-        responseFinal = response.body();
+            // Pegando os dados da request com o client e convertendo para Json :
+            HttpResponse<String> response = client
+
+                    .send(request, HttpResponse.BodyHandlers.ofString());
+
+
+            // Armazenando os dados do response.body dentro do respose final :
+            responseFinal = response.body();
+
+
+        }
+
+
+
 
 
         // Intanciando o Gson e fazendo com que tudo que vier da API omdb fique em upper camel case :
