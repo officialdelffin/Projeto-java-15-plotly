@@ -13,39 +13,41 @@ public class QueryException {
     private Exception e;
 
 
-
     // Métodos :
 
     // Faz o tratamento caso o Runtime esteja em um formato invalido :
-    public void handleInvalidRuntime (String runtime) {
+    public void handleInvalidRuntime(String runtime) {
+
+        // Recebendo paremetros
+        this.runtime = runtime;
 
 
-
+        System.out.printf("""
+                
+                (Erro de conversão)
+                
+                O tempo %s não pode ser convertido
+                
+                Verifique se a API voltou um valor numérico certo!
+                
+                """, runtime);
 
 
     }
 
 
     // Faz o tratamento caso a busca não seja realizada por conta de alguma falha na rede :
-    public void handleConnectionError (Exception e) {
-
-
-
+    public void handleConnectionError(Exception e) {
 
 
     }
 
 
     // Faz o tratamento caso o filme não foi encontrado no catalogo :
-    public void handleMovieNotFound (String title) {
-
-
-
-
+    public void handleMovieNotFound(String title) {
 
 
     }
-
 
 
 }
