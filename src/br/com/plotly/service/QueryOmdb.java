@@ -4,6 +4,7 @@ package br.com.plotly.service;
 
 
 // Importações :
+import br.com.plotly.exception.QueryException;
 import br.com.plotly.model.Title;
 import br.com.plotly.model.TitleRecord;
 import com.google.gson.FieldNamingPolicy;
@@ -45,6 +46,10 @@ public class QueryOmdb  {
 
         // Atribuindo parametros com os atributos :
         this.path = pathP;
+
+
+        // Instanciando o tratador de exceções :
+        QueryException handle = new QueryException();
 
 
         // Configurando o agente que vai pegar a query e trazer um response :
