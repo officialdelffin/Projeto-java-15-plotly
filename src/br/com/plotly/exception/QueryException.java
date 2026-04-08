@@ -5,6 +5,8 @@ package br.com.plotly.exception;
 // Importações :
 import br.com.plotly.view.Menu;
 
+import java.io.IOException;
+
 // Classe responsável por tratamento de excessões :
 public class QueryException {
 
@@ -22,7 +24,7 @@ public class QueryException {
     // Métodos :
 
     // Faz o tratamento caso o Runtime esteja em um formato invalido :
-    public void handleInvalidRuntime(String runtime) {
+    public void handleInvalidRuntime(String runtime) throws IOException, InterruptedException {
 
 
         // Recebendo paremetros
@@ -38,6 +40,9 @@ public class QueryException {
                 Verifique se a API voltou um valor numérico certo!
                 
                 """, runtime);
+
+        // Executando novamente a função de escolher um titulo :
+        newInitiation.interactionUser();
 
 
     }
