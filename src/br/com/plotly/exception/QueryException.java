@@ -67,6 +67,10 @@ public class QueryException {
                 """, errorConection.getMessage());
 
 
+        // Aviso para tentar novamente :
+        System.out.println("Clique na tecla ENTER para fazer uma nova consulta: ");
+
+
         // Executando novamente a função de escolher um titulo :
         newInitiation.interactionUser();
 
