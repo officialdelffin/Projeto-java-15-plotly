@@ -110,21 +110,31 @@ public class QueryOmdb  {
             }
 
 
+            // Se tudo estiver de acordo ele cria um objeto de Title com base no title record e seus atributos :
+            title = new Title(
+
+
+                    titleDefaute.title(),
+                    titleDefaute.year(), titleDefaute.released(),
+                    titleDefaute.runtime(), titleDefaute.genre(), titleDefaute.director(),
+                    titleDefaute.writer(),
+                    titleDefaute.plot()
+
+
+            );
+
+
         }
 
 
-        // Criando um objeto de Title com base no title record e seus atributos :
-        title = new Title(
+        // Caso a internet falhe ou a API, para não quebrar o sistema chamamos o handle para fazer o tratamento disso sem encerrar o sistema :
+        catch (IOException | InterruptedException erroConnection) {
 
 
-                titleDefaute.title(),
-                titleDefaute.year(), titleDefaute.released(),
-                titleDefaute.runtime(), titleDefaute.genre(), titleDefaute.director(),
-                titleDefaute.writer(),
-                titleDefaute.plot()
+            handle.handleConnectionError(erroConnection);
 
 
-        );
+        }
 
 
         // Exibindo o título da tela do usuário :
