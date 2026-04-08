@@ -78,7 +78,7 @@ public class QueryOmdb  {
 
 
             // Se a busca do titulo na API e não ter esse titule ele avisa o erro :
-            if (responseFinal.contains("false")) {
+            if (responseFinal.contains("False")) {
 
 
                 handle.handleMovieNotFound(getNameTitle());
@@ -101,7 +101,7 @@ public class QueryOmdb  {
 
 
             // Se o runtime esiver com a formatação errada o handle exibe o erro :
-            if (titleDefaute.runtime().equals("N/A")) {
+            if (titleDefaute.runtime() != null && titleDefaute.runtime().equals("N/A")) {
 
 
                 handle.handleInvalidRuntime(getNameTitle());

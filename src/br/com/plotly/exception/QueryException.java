@@ -4,7 +4,6 @@ package br.com.plotly.exception;
 
 // Importações :
 import br.com.plotly.view.Menu;
-
 import java.io.IOException;
 
 // Classe responsável por tratamento de excessões :
