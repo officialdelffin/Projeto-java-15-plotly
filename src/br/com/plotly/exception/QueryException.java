@@ -2,6 +2,8 @@
 // Pacote :
 package br.com.plotly.exception;
 
+// Importações :
+import br.com.plotly.view.Menu;
 
 // Classe responsável por tratamento de excessões :
 public class QueryException {
@@ -11,6 +13,10 @@ public class QueryException {
     private String runtime;
     private String title;
     private Exception errorConection;
+
+
+    // Instanciando a classe main :
+    Menu newInitiation = new Menu();
 
 
     // Métodos :
