@@ -76,7 +76,7 @@ public class QueryException {
 
 
     // Faz o tratamento caso o filme não foi encontrado no catalogo :
-    public void handleMovieNotFound(String title) {
+    public void handleMovieNotFound(String title) throws IOException, InterruptedException {
 
 
         // Recebendo parametros :
@@ -92,6 +92,10 @@ public class QueryException {
                 Verifique se o nome do filme está escrito corretamente em inglês.
                 
                 """);
+
+
+        // Executando novamente a função de escolher um titulo :
+        newInitiation.interactionUser();
 
 
     }
