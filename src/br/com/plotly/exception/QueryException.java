@@ -41,6 +41,7 @@ public class QueryException {
                 
                 """, runtime);
 
+
         // Executando novamente a função de escolher um titulo :
         newInitiation.interactionUser();
 
@@ -49,7 +50,7 @@ public class QueryException {
 
 
     // Faz o tratamento caso a busca não seja realizada por conta de alguma falha na rede :
-    public void handleConnectionError(Exception errorConection) {
+    public void handleConnectionError(Exception errorConection) throws IOException, InterruptedException {
 
 
         // Recebendo parametros :
@@ -65,6 +66,10 @@ public class QueryException {
                 Detalhe técnico : %s
                 
                 """, errorConection.getMessage());
+
+
+        // Executando novamente a função de escolher um titulo :
+        newInitiation.interactionUser();
 
 
     }
