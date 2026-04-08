@@ -137,6 +137,16 @@ public class QueryOmdb  {
         }
 
 
+        // Tratamento para qualquer outro erro :
+        catch (Exception generalErro) {
+
+
+            System.out.println("Erro inesperado : " + generalErro.getMessage());
+
+
+        }
+
+
         // Exibindo o título da tela do usuário :
         System.out.println(title);
 
