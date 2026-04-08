@@ -81,7 +81,7 @@ public class QueryOmdb  {
             if (responseFinal.contains("false")) {
 
 
-                handle.handleMovieNotFound(nameTitle);
+                handle.handleMovieNotFound(getNameTitle());
 
 
             }
@@ -94,17 +94,23 @@ public class QueryOmdb  {
                     .create();
 
 
+            // Criando um objeto de um title record e vinculando o que vem da API com os atributos do record :
+            TitleRecord titleDefaute = configueGson.fromJson(responseFinal, TitleRecord.class);
+
+
+
+
+            // Se o runtime esiver com a formatação errada o handle exibe o erro :
+            if (titleDefaute.runtime().equals("N/A")) {
+
+
+                handle.handleInvalidRuntime(getNameTitle());
+
+
+            }
+
+
         }
-
-
-
-
-
-
-
-
-        // Criando um objeto de um title record e vinculando o que vem da API com os atributos do record :
-        TitleRecord titleDefaute = configueGson.fromJson(responseFinal, TitleRecord.class);
 
 
         // Criando um objeto de Title com base no title record e seus atributos :
