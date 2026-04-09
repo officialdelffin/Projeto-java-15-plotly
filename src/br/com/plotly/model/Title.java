@@ -154,13 +154,32 @@ public class Title {
 
             // Atributos do sistema de loop para o timeLine :
 
+
+            // Atributos das horas, minutos e segundos do titulo :
             int titleHour;
             int titleMinutes;
             int titleSeconds;
 
+
+            // Atributos das horas, minutos e segundos que estão sendo passadas do titulo :
             int pastHour;
             int pastMinutes;
             int pastSeconds;
+
+
+            // Organizando quantidade de horas e minutos com base no runtime em segundos do titulo :
+
+            // Passando os segundos para horas :
+            titleHour = timeSeconds / 3600;
+
+
+            // Passando os segundos para minutos :
+            titleMinutes = (timeSeconds % 3600) / 60;
+
+
+            // Passando o timeSeconds para o titleSeconds :
+            titleSeconds = timeSeconds;
+
 
 
         }
