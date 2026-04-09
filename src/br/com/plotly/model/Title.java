@@ -152,7 +152,15 @@ public class Title {
         while (pastTime <= timeSeconds) {
 
 
+            // Atributos do sistema de loop para o timeLine :
 
+            int titleHour;
+            int titleMinutes;
+            int titleSeconds;
+
+            int pastHour;
+            int pastMinutes;
+            int pastSeconds;
 
 
         }
