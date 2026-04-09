@@ -183,13 +183,15 @@ public class Title {
 
             // Organizando quantidade de horas, minutos e segundos restantes do title :
 
-
+            // Armazenando a quantidades de horas que falta :
             pastHour = pastTime / 3600;
 
 
+            // Armazenando a quantidade de minutos que falta :
             pastMinutes = (pastTime % 3600) / 60;
 
 
+            // Armazenando a quantidade de segundos que faltam :
             pastSeconds = pastTime;
 
 
