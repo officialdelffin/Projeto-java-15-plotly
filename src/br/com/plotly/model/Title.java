@@ -181,6 +181,19 @@ public class Title {
             titleSeconds = timeSeconds;
 
 
+            // Organizando quantidade de horas, minutos e segundos restantes do title :
+
+
+            pastHour = pastTime / 3600;
+
+
+            pastMinutes = (pastTime % 3600) / 60;
+
+
+            pastSeconds = pastTime;
+
+
+
 
         }
 
