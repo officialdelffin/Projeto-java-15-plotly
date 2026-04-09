@@ -134,16 +134,22 @@ public class Title {
     public void timelineTitle(int timeP) throws InterruptedException {
 
 
+        // Atributos :
+
+        int timeSeconds = 0;
+        int pastTime = 0;
+
+
         // Atribuindo parametros nos atributos :
-        int time = timeP;
+        timeSeconds = timeP;
 
 
         // Fazendo o calculo da conversão em minutos para segundos :
-        time = 60 * time;
+        timeSeconds = 60 * timeSeconds;
 
 
         // Criando um for i para fazer o sistema de cronograma :
-        for (int i = 0; i <= time; i++) {
+        for (int i = 0; i <= timeSeconds; i++) {
 
 
             // Faz com que o loop demore um segundo para contabilizar e incrementar mais 1 no i :
