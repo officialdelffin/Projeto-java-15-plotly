@@ -148,16 +148,11 @@ public class Title {
         timeSeconds = 60 * timeSeconds;
 
 
-        // Criando um for i para fazer o sistema de cronograma :
-        for (int i = 0; i <= timeSeconds; i++) {
+        // Enquanto o tempo passado for meor que
+        while (pastTime <= timeSeconds) {
 
 
-            // Faz com que o loop demore um segundo para contabilizar e incrementar mais 1 no i :
-            Thread.sleep(1000);
 
-
-            // Exibe o progresso na mesma linha (usando \r para sobrescrever)
-            System.out.print("\rProgresso: " + i + " segundos / " + getRuntime() + " min assistidos.");
 
 
         }
