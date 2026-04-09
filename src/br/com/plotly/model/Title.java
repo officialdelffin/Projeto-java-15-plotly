@@ -196,11 +196,7 @@ public class Title {
 
 
             // Exibindo timeline do playTitle :
-            System.out.printf("""
-                    
-                    "%d:%02d:%02d h /  %d:%02d:%02d h 
-                    
-                    """, pastHour, pastMinutes, pastSeconds, titleHour, titleMinutes, titleSeconds);
+            System.out.printf("\r%d:%02d:%02d h /  %d:%02d:%02d h ", pastHour, pastMinutes, pastSeconds, titleHour, titleMinutes, titleSeconds);
 
 
             // Criando o controle do tempo de 1 segundo :
