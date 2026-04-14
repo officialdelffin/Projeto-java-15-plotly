@@ -88,8 +88,11 @@ public class QueryOmdb  {
             if (responseFinal.contains("False")) {
 
 
+                // Chamando o handle :
                 handle.handleMovieNotFound(getNameTitle());
 
+
+                // Fazendo que o usuario faça uma nova consulta :
                 menu.interactionUser();
 
 
