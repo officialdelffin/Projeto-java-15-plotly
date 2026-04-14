@@ -7,6 +7,7 @@ package br.com.plotly.service;
 import br.com.plotly.exception.QueryException;
 import br.com.plotly.model.Title;
 import br.com.plotly.model.TitleRecord;
+import br.com.plotly.view.Menu;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -22,11 +23,17 @@ public class QueryOmdb  {
 
 
     // Atributos :
+
     private String path;
     private String responseFinal;
     private String nameTitle;
     private Title title;
 
+
+    // Intancia :
+
+    // Instancia do menu :
+    Menu menu = new Menu();
 
     // Metodo getters e setters : :
 
@@ -82,6 +89,8 @@ public class QueryOmdb  {
 
 
                 handle.handleMovieNotFound(getNameTitle());
+
+                menu.interactionUser();
 
 
             }
