@@ -116,9 +116,11 @@ public class QueryOmdb  {
             if (titleDefaute.runtime() != null && titleDefaute.runtime().equals("N/A")) {
 
 
+                // Chamando o handle :
                 handle.handleInvalidRuntime(getNameTitle());
 
 
+                // Fazendo que o usuario faça uma nova consulta :
                 menu.interactionUser();
 
 
