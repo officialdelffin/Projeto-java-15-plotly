@@ -119,6 +119,9 @@ public class QueryOmdb  {
                 handle.handleInvalidRuntime(getNameTitle());
 
 
+                menu.interactionUser();
+
+
             }
 
 
