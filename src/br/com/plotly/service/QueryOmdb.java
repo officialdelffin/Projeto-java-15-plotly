@@ -130,7 +130,7 @@ public class QueryOmdb {
         catch (NullPointerException erroNotFound) {
 
 
-            handle.handleMovieNotFound(getNameTitle());
+            handle.handleMovieNotFound(getNameTitle(), erroNotFound);
 
 
         }

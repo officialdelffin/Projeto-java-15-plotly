@@ -92,6 +92,8 @@ public class QueryException {
         this.title = title;
 
 
+        System.out.println("Erro : " + errorConection.getMessage());
+
 
         System.out.printf("""
                 
