@@ -4,7 +4,9 @@ package br.com.plotly.view;
 
 
 // Importações :
+
 import br.com.plotly.service.QueryOmdb;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -63,7 +65,7 @@ public class Menu {
 
 
     // Função responsável por criar o path :
-    public void pathCreate (String nameTitleP) throws IOException, InterruptedException {
+    public void pathCreate(String nameTitleP) throws IOException, InterruptedException {
 
 
         // Atribuindo paramentros na variavel :
@@ -82,19 +84,19 @@ public class Menu {
 
 
     // Metodo que executa ações quando o usuário selecionar o title :
-    public void actionTitle () throws IOException, InterruptedException {
+    public void actionTitle() throws IOException, InterruptedException {
 
 
         // Pedindo para o usuário escolher entre dar play no title ou pesquisar outro título :
         System.out.printf("""
-                    
-                    Digite alguma opções do título :
-                    
-                    
-                    1 - Assistir %s
-                    2 - Buscar outro título
-                    
-                    """ , queryTitle.getNameTitle());
+                
+                Digite alguma opções do título :
+                
+                
+                1 - Assistir %s
+                2 - Buscar outro título
+                
+                """, queryTitle.getNameTitle());
 
 
         // Formatando menu :
@@ -117,7 +119,7 @@ public class Menu {
 
 
     // Metodo responsavel por verificar se o usuário quer dar play em um title ou se quer dar pause em um title :
-    public void playOrPause (int choiceP) throws IOException, InterruptedException {
+    public void playOrPause(int choiceP) throws IOException, InterruptedException {
 
 
         // Atribuindo o paramentro na variavel :

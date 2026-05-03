@@ -4,6 +4,7 @@ package br.com.plotly.service;
 
 
 // Importações :
+
 import br.com.plotly.exception.QueryException;
 import br.com.plotly.model.Title;
 import br.com.plotly.model.TitleRecord;
@@ -11,6 +12,7 @@ import br.com.plotly.view.Menu;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -19,7 +21,7 @@ import java.net.http.HttpResponse;
 
 
 // Classe responsável pela request na API Omdb :
-public class QueryOmdb  {
+public class QueryOmdb {
 
 
     // Atributos :
@@ -48,7 +50,7 @@ public class QueryOmdb  {
 
 
     // Métodos responsável por fazer a consulta dos titles na API :
-    public void consutationTitle (String pathP) throws IOException, InterruptedException {
+    public void consutationTitle(String pathP) throws IOException, InterruptedException {
 
 
         // Atribuindo parametros com os atributos :
@@ -110,8 +112,6 @@ public class QueryOmdb  {
             TitleRecord titleDefaute = configueGson.fromJson(responseFinal, TitleRecord.class);
 
 
-
-
             // Se o runtime esiver com a formatação errada o handle exibe o erro :
             if (titleDefaute.runtime() != null && titleDefaute.runtime().equals("N/A")) {
 
@@ -148,7 +148,6 @@ public class QueryOmdb  {
         catch (IOException | InterruptedException erroConnection) {
 
 
-
             handle.handleConnectionError(erroConnection);
 
 
@@ -177,7 +176,7 @@ public class QueryOmdb  {
 
 
     // Delegando o metodo playTitle :
-    public void playTitle () throws InterruptedException {
+    public void playTitle() throws InterruptedException {
 
 
         title.playTitle();
@@ -187,7 +186,7 @@ public class QueryOmdb  {
 
 
     // Delegando o metodo pauseTitle
-    public void pauseTile () {
+    public void pauseTile() {
 
 
         title.pauseTitle();
