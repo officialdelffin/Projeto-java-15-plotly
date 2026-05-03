@@ -42,7 +42,7 @@ public class Menu {
             System.out.println("Digite o titulo desejado : " + "\n");
 
 
-            // Armazenando a escolher do user :
+            // Limpando o scanner e armazenando a escolher do user :
             responseUser = inputUser.nextLine();
 
 

@@ -34,9 +34,6 @@ public class QueryOmdb {
 
     // Intancia :
 
-    // Instancia do menu :
-    Menu menu = new Menu();
-
     // Metodo getters e setters : :
 
     // Getters :
@@ -86,21 +83,6 @@ public class QueryOmdb {
             responseFinal = response.body();
 
 
-            // Se a busca do titulo na API e não ter esse titule ele avisa o erro :
-            if (responseFinal.contains("False")) {
-
-
-                // Chamando o handle :
-                handle.handleMovieNotFound(getNameTitle());
-
-
-                // Fazendo que o usuario faça uma nova consulta :
-                menu.interactionUser();
-
-
-            }
-
-
             // Intanciando o Gson e fazendo com que tudo que vier da API omdb fique em upper camel case :
             Gson configueGson = new GsonBuilder()
 
@@ -121,7 +103,7 @@ public class QueryOmdb {
 
 
                 // Fazendo que o usuario faça uma nova consulta :
-                menu.interactionUser();
+                return;
 
 
             }
@@ -139,6 +121,16 @@ public class QueryOmdb {
 
 
             );
+
+
+        }
+
+
+        // Caso o titulo não seja encontrado :
+        catch (NullPointerException erroNotFound) {
+
+
+            handle.handleMovieNotFound(getNameTitle());
 
 
         }
